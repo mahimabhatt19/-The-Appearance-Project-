@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #f1f1f1;
+}
+
+
+
+
+ 
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 70px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <h1>Final Rating</h1>
+    <p>enter the confirmed details.</p>
+    <hr>
+  <form action="admin2.php" method=post>
+    <label for="fname"><b>Confirming volunteer First Name to register in database</b></label>
+    <input type="text" id="fname" name="firstname" placeholder="Volunteer first name..">
+
+    <label for="lname"><b>>Confirming volunteer Last Name to register in database</b></label>
+    <input type="text" id="lname" name="lastname" placeholder="Volunteer last name..">
+	
+	
+    
+    <label for="rating"><b><font color='red'>Ratings for Q1:</b></font></label><br>
+    <input type="radio" name="Q1" value="1",class=container > 1
+    <input type="radio" name="Q1" value="2",class=container > 2
+    <input type="radio" name="Q1" value="3",class=container > 3
+    <input type="radio" name="Q1" value="4",class=container > 4
+    <input type="radio" name="Q1" value="5",class=container > 5<br>
+	
+	<label for="rating"><b><font color='red'> Ratings Q2</b></font></label><br>
+    <input type="radio" name="Q2" value="1",class=container > 1
+    <input type="radio" name="Q2" value="2",class=container > 2
+    <input type="radio" name="Q2" value="3",class=container > 3
+    <input type="radio" name="Q2" value="4",class=container > 4
+    <input type="radio" name="Q2" value="5",class=container > 5<br>
+
+<label for="rating"><b><font color='red'> Ratings Q3</b></font></label><br>
+    <input type="radio" name="Q3" value="1",class=container > 1
+    <input type="radio" name="Q3" value="2",class=container > 2
+    <input type="radio" name="Q3" value="3",class=container > 3
+    <input type="radio" name="Q3" value="4",class=container > 4
+    <input type="radio" name="Q3" value="5",class=container > 5<br>
+
+
+     <br>
+     <br>
+     <br>
+
+    
+	<input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
